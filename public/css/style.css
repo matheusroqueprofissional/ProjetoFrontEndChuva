@@ -1,0 +1,324 @@
+body{
+    font-size: 100%;
+    font-style: none;
+    padding: 0;
+    gap: 0;
+    background-color: #E5E5E5;
+}
+
+p,h1,h2,h3,h4{
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    left: 212px;
+    width: 1299px;
+    background-color: #FDF1EB;
+    bottom: 5px;
+}
+
+.text-top{
+    position: relative;
+    left: 36px;
+}
+
+.first-text-top{
+    position: relative;
+    font-size: 14px;
+    color: #725C5C;
+    width: 391px;
+    height: 0px;
+    font-weight: 400,regular;
+    line-height: 16.41px;
+    bottom: 20px;
+
+}
+.second-text-top{
+    position: relative;
+    font-size: 22px;
+    color: #725C5C;
+    width: 643px;
+    height: 0px;
+    font-weight: 400,regular;
+    line-height: 16.41px;
+    right: 3px;
+    bottom: 18px;
+   
+}
+.third-text-top{
+    position: relative;
+    width: 105px;
+    height: 0px;
+    font-size: 14px;
+    color: #725C5C;
+    font-weight: 400,regular;
+    line-height: 25.78px;
+    bottom: 20px;
+    align-items: right;
+    
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    width: 100%;
+    
+  }
+  
+  
+
+.select-language{
+    background: #ffffff url('../imagens/bgs/seta.png') 95.5% 50% no-repeat;
+    font-size: 14px;
+    font-weight: 400,regular;
+    line-height: 17.5px;
+    position: relative;
+    width: 97px;
+    height: 34px;
+    display: flex;
+    left: 110px;
+    top: 17px;
+    color: #333333;
+    font-family: 'Quicksand',sans-serif;
+    text-align: left;
+
+    
+}
+.login{
+    display: flex;
+    position: relative;
+    left: 150px;
+}
+
+.text-bem-vindo{
+    position: relative;
+    left: 210px;
+    width: 86px;
+    height: 18px;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 17px;
+}
+
+.text-email{
+    position: relative;
+    top: 20px;
+    font-family: 'Quicksand',sans-serif;
+    font-style: normal;
+}
+
+.imagemglobolanguage{
+    position: relative;
+    width: 202px;
+    height: 21px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ASIDE left*/
+.aside-left{
+    position: relative;
+    width: 220px;
+    height: 01px;
+    bottom: 100px;
+    right: 8px;
+}
+
+
+.box-orange-top{
+    background-image: linear-gradient(#FFB354, #EE7A3A);
+    width: 220px;
+    height: 100px;
+    position: fixed;
+    background-repeat: no-repeat;
+}
+
+.image-orange{
+    position: fixed;
+    bottom:338.5px;
+}
+
+.title-box-orange{
+    position: relative;
+    color: #ffffff;
+    left: 20px;
+    height: 68px;
+    width: 178px;
+    left: 20px;
+    font-size: 30px;
+    top: 15px;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.button-menu-aside{
+position: fixed;
+top: 3000px;
+}
+
+
+#label-Apresentação:checked{
+
+    background-color: red;
+}
+
+
+#label-Apresentação,
+#label-Comitês,
+#label-Autores,
+#label-Eixos-tematicos,
+#label-Trabalhos,
+#label-Contato{
+    left: 0px;
+    width:196.1px;
+    height: 23px;
+    background-color: #FFFFFF;
+    padding-left:24px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    color: #725C5C;
+    font-weight: 500,medium;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 15px;
+    line-height: 18.75px;
+   
+    
+}
+
+
+#label-Apresentação{
+    position: fixed;
+    top:333px;   
+}
+#label-Comitês{
+    position: fixed;
+    top:363px
+}
+#label-Autores{
+    position: fixed;
+    top:393px
+}
+#label-Eixos-tematicos{
+    position: fixed;
+    top:423px
+}
+#label-Trabalhos{
+    position: fixed;
+    top:453px
+}
+#label-Contato{
+    position: fixed;
+    top:483px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login*/
+
+
+.imagem-redonda-de-uma-pessoa{
+    position: relative;
+    height: 30px;
+    border-radius: 50px;
+    left: 60px;
+    top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========  MAIN  =========*/
+.title-main-orange{
+    color: #EE7A3A;
+    width: 786px;
+    height: 54px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900,Black;
+}
+
+.main{
+    position: relative;
+    left: 300px;
+    z-index: 1000;
+}
+
+
+
+
+
+.collapsible {
+    background-color: #FDF1EB;
+    color: #4E4E4E;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    line-height: 25px;
+    transition: 3s;
+    font-weight: 500;
+  }
+  
+
+  
+  .content {
+    
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
