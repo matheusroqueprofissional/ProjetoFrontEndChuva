@@ -51,15 +51,70 @@
         <video  src=""></video>
         <label for="resumo-input">
            
-            <button type="button" class="collapsible">Resumo</button>
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+                <input type="button" id="collapsible" class="collapsible" value="Resumo"></input>
+            
+                <div class="content">
+                    <label for="collapsible">
+                      <p class="first-pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <a onclick="sumir()" style="color: #ED7839; position: relative; left: 660px;" id="link">Ver mais</a> </p>                                  
+                      <p class="second-pharagraph">Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.</p>
+                      <p class="third-pharagraph">Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.</p>
+                      <p class="four-pharagraph">Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+                    </label>
+                </div>
+            
+            
             
             
         </label>
-        <input class="input-checkbox" id="resumo-input" name="resumo-input" type="checkbox">
+
+
+       
+
+        <input type="button" id="collapsibleDiscuções" class="collapsibleDiscuções" value="Discuções"></input>
+        <div class="content">
+            <div class="conteudo-compartilhe-suas-ideias">
+                <h2 class="title-compartilhe-suas-idieas">Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                <div class="icones">
+                    <img src="../image/icone1.svg" id="icone01" alt="">
+                    <img src="../image/icone2.svg" id="icone02" alt="">
+                    <img src="../image/icone3.svg" id="icone03" alt="">
+                </div>
+                <p class="text-compartilhe-suas-duvidas">
+                    Sabia que o maior estímulo no desenvolvimento científico 
+                    e cultural é a curiosidade? Deixe seus 
+                    questionamentos ou sugestões para o autor!
+                </p>
+
+                <button class="button-criar-topico"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
+                <div class="box-assunto-da-pergunta">
+                    <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                    <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                    <p class="text-assunto-da-pergunta">
+                        Comecinho da pergunta aparece aqui 
+                        resente relato inscreve-se no campo da
+                         análise da dimensão e impacto de processo
+                        formativo situado impacto de processo formativo processo...
+                    </p>
+                </div>
+                <div class="box-assunto-da-pergunta">
+                    <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                    <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                    <p class="text-assunto-da-pergunta">
+                        Comecinho da pergunta aparece aqui 
+                        resente relato inscreve-se no campo da
+                         análise da dimensão e impacto de processo
+                        formativo situado impacto de processo formativo processo...
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+
+        
     </main>
+
+
+
 
 
 
@@ -69,11 +124,11 @@
 
     <aside class="aside-right">
         <button class="button-download">
-            <img class="image-download" src="" alt="">
+            <img class="image-download" src="" alt="image-download">
             <p class="download-text">Download</p>
         </button>
         <button class="button-star">
-            <img class="image-star" src="" alt="">
+            <img class="image-star" src="" alt="image-star">
         </button>
         <button class="button-doi">
             <img class="image-doi" src="" alt="">
@@ -92,6 +147,6 @@
     <footer></footer>
 
 
-    <script src="./index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
