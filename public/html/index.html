@@ -15,9 +15,9 @@
                 <p class="second-text-top">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
                 <p class="third-text-top">ISSN: 1234-5678</p>
             </div>
-            
-            <select class="select-language" name="" id="">
+            <img class="seta" src="../image/seta.png" alt="">
                 <img class="imagemglobolanguage" src="../image/imagemglobolanguage.svg" alt="imagemglobo">
+            <select class="select-language" name="" id="">
                 <option class="option" value="PT, BR">PT, BR</option>
                 <option class="option" value="EN">EN</option>
                 <option class="option" value="SP">SP</option>
@@ -28,7 +28,6 @@
                 <img class="imagem-redonda-de-uma-pessoa" src="../image/imagem-redonda-login.svg" alt="imagem redonda de uma pessoa">
             </div>
         </nav>
-
     </header>
     <aside class="aside-left">
         <div class="box-orange-top">
@@ -36,7 +35,6 @@
             <img class="image-orange" src="../image/imagem-laranja-13-slaca.svg" alt="">
         </div>
         <div class="box-under-image">
-            
             <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input><label for="button-radio" class="button-menu-radio-label" id="label-Apresentação" onclick="cliqueemmim()">Apresentação</label>
             <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input><label for="button-radio" class="button-menu-radio-label" id="label-Comitês">Comitês</label>
             <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input><label for="button-radio" class="button-menu-radio-label" id="label-Autores">Autores</label>
@@ -46,56 +44,67 @@
         </div>
     </aside>
     <!--aside do lado direito----- mexer quando terminar main de preferencia-->
-
     <aside class="aside-right">
-        <button class="button-download">
-            <img class="image-download" src="../image/download.svg" alt="image-download">
-            <p class="download-text">Download</p>
-        </button>
-        <button class="button-star">
-            <img class="image-star" src="../image/favoritar (1).svg" alt="image-star">
-        </button>
-        <button class="button-doi">
-            <img class="image-doi" src="../image/doi.svg" alt="">
-        </button>
-
-        <p class="text-orange-aside-right">COMO CITAR ESSE TRABALHO?</p>
-
-        <div class="box-detalhes">
-            <h2 class="title-detalhes">Detalhes</h2>
-
-            
-
-
+        <div class="botoes">
+            <button class="button-download">
+                <img class="image-download" src="../image/download.svg" alt="image-download">
+                <p class="download-text">Download</p>
+            </button>
+            <button class="button-star">
+                <img class="image-star" src="../image/favoritar (1).svg" alt="image-star">
+            </button>
+            <button class="button-doi">
+                <img class="image-doi" src="../image/doi.svg" alt="">
+            </button>
         </div>
-    </aside>
-    
+        <p class="text-orange-aside-right">COMO CITAR ESSE TRABALHO?</p>
+        <div class="box-detalhes">
+            <div class="box-orange-detalhes">
+                <h2 class="title-detalhes">Detalhes</h2>
+            </div>
+            <div class="box-text-detalhes">
+                <p class="text-box-detalhes">
+                    Tipo de Apresentação: <strong>Pôster</strong>
+                    Eixo temático: <strong>Alimentação e saúde (AS) </strong>
+                    Palavras-chaves:<strong>Alimentos funcionais, alimentação escolar.</strong>               
+                  <p class="font-autores">
+                   <ul><li><strong> <p style="color: black;">Autores</p></strong></li></ul>
+                   <ul><li> Galileo Galilei¹</li></ul>
+                   <ul><li> Berta Lange de Morretes²</li></ul>
+                   <ul><li> Isaac Newton³</li></ul>
+                   <ul><li> Cesar Lattes¹</li></ul>
+                   <ul><li> Stephen Hawking⁴</li></ul>
+                  </p>   
+                  <p class="text-universidade">
+                     ¹Universidade Estadual de Campinas
+                    ²Universidade de São Paulo
+                    ³Instituto Nacional de Pesquisas Espaciais
+                    ⁴Universidade Federal do Rio de Janeiro
+                  </p>           
+                    
+                </p>
+            </div>
+        </div>
+    </aside> 
     <main class="main">
         <h2 class="title-main-orange">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
-
-        
-        <video src="<h1>HTML 5 Audio Player</h1>
- 
-            <div class="container gradient">
-                 
-                <img class="cover" src="images/cover.jpg" alt="">
-         
-                <div class="player gradient">
-         
-                    <a class="button gradient" id="play" href="" title=""></a>
-                    <a class="button gradient" id="mute" href="" title=""></a>
-                 
-                        <input type="range" id="seek" value="0" max=""/>
-             
-                    <a class="button gradient" id="close" href="" title=""></a>
-                     
-                </div><!-- / player -->
-                 
-            </div><!-- / Container-->"></video>
+        <div class="video">
+            <div id="video-controls" class="controls" data-state="hidden">
+                <button id="playpause" type="button" data-state="play">Play/Pause</button>
+                <button id="stop" type="button" data-state="stop">Stop</button>
+                <div class="progress">
+                   <progress id="progress" value="0" min="0">
+                      <span id="progress-bar"></span>
+                   </progress>
+                </div>
+                <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+                <button id="volinc" type="button" data-state="volup">Vol+</button>
+                <button id="voldec" type="button" data-state="voldown">Vol-</button>
+                <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+             </div>
+        </div>
         <label for="resumo-input">
-           
                 <input type="button" id="collapsible" class="collapsible" value="Resumo"></input>
-            
                 <div class="content">
                     <label for="collapsible">
                       <p class="first-pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <a onclick="sumir()" style="color: #ED7839; position: relative; left: 660px;" id="link">Ver mais</a> </p>                                  
@@ -104,18 +113,11 @@
                       <p class="four-pharagraph">Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
                     </label>
                 </div>
-            
-            
-            
-            
         </label>
-
-
        <!--DISCUÇÕES-->
-
         <input type="button" id="collapsibleDiscuções" class="collapsibleDiscuções" value="Discuções"></input>
         <div class="contentDiscuções">
-            <div class="conteudo-compartilhe-suas-ideias">
+            <div class="conteudo-compartilhe-suas-ideias" id="conteudo-compartilhe-suas-ideias">
                 <h2 class="title-compartilhe-suas-idieas">Compartilhe suas ideias ou dúvidas com os autores!</h2>
                 <div class="icones">
                     <img src="../image/icone1.svg" id="icone01" alt="">
@@ -127,8 +129,7 @@
                     e cultural é a curiosidade? Deixe seus 
                     questionamentos ou sugestões para o autor!
                 </p>
-
-                <button class="button-criar-topico"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
+                <button class="button-criar-topico" id="button-criar-topico" name="button-criar-topico"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
                 <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta01">
                     <div class="conteudo-box">
                         <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
@@ -174,32 +175,22 @@
                             <a href="#" class="text-like">1 like</a>
                             <a href="#" class="text-comentario">1 comentario</a>
                     </div>
-
-                    </div>
-                    
+                    </div>  
                 </div>
+            </div>
+        <!--apos clique em botao laranja-->
+
+            <div class="form-envio" id="form-envio">
                 
-            
             </div>
         </div>
-
-        
-        
     </main>
-
-
-
-
-
-
-
-
-
     <footer>
-        <img src="../image/imagemgaloa.png" alt="">
+        <div class="footer-image">
+            <img src="../image/imagem - footer.svg" class="imagem-footer" alt="">
+
+        </div>
     </footer>
-
-
     <script src="../js/index.js"></script>
 </body>
 </html>

@@ -3,7 +3,8 @@ body{
     font-style: none;
     padding: 0;
     gap: 0;
-    background-color: #E5E5E5;
+    background-color: #ffffff;
+    
 }
 
 p,h1,h2,h3,h4{
@@ -35,7 +36,7 @@ p,h1,h2,h3,h4{
     height: 0px;
     font-weight: 400,regular;
     line-height: 16.41px;
-    bottom: 20px;
+    bottom: 15px;
 
 }
 .second-text-top{
@@ -47,7 +48,7 @@ p,h1,h2,h3,h4{
     font-weight: 400,regular;
     line-height: 16.41px;
     right: 3px;
-    bottom: 18px;
+    bottom: 13px;
    
 }
 .third-text-top{
@@ -58,23 +59,31 @@ p,h1,h2,h3,h4{
     color: #725C5C;
     font-weight: 400,regular;
     line-height: 25.78px;
-    bottom: 20px;
+    bottom: 15px;
     align-items: right;
     
 }
 
 select {
     -webkit-appearance: none;
-    -moz-appearance:    none;
-    appearance:         none;
-    width: 100%;
-    
+    -moz-appearance:   none ;
+    appearance:none;
+    width: 100%;    
   }
   
+  .seta{
+      position: relative;
+     width: 20px;
+     height: 20px;
+     left: 223px;
+     top: 23px;
+     z-index: 30;
+
+  }
   
 
 .select-language{
-    background: #ffffff url('../imagens/bgs/seta.png') 95.5% 50% no-repeat;
+    background: #ffffff url('../imagens/imagens/seta.png') 95.5% 50% no-repeat;
     font-size: 14px;
     font-weight: 400,regular;
     line-height: 17.5px;
@@ -86,37 +95,23 @@ select {
     top: 17px;
     color: #333333;
     font-family: 'Quicksand',sans-serif;
-    text-align: left;
+    text-align: center;
 
     
 }
-.login{
-    display: flex;
-    position: relative;
-    left: 150px;
-}
 
-.text-bem-vindo{
-    position: relative;
-    left: 210px;
-    width: 86px;
-    height: 18px;
-    font-family: 'Quicksand',sans-serif;
-    font-size: 17px;
-}
 
-.text-email{
-    position: relative;
-    top: 20px;
-    font-family: 'Quicksand',sans-serif;
-    font-style: normal;
-}
+
+
+
 
 .imagemglobolanguage{
     position: relative;
-    width: 202px;
+    left: 136px;
+    top: 21px;
+    width: 20px;
     height: 21px;
-    z-index: 1;
+    z-index: 30;
 }
 
 
@@ -139,7 +134,7 @@ select {
     
     position: relative;
     width: 220px;
-    height: 2508px;
+    height: 0px;
     bottom: 100px;
     right: 8px;
     
@@ -264,13 +259,32 @@ top: 3000px;
 
 
 /*login*/
+.login{
+    display: flex;
+    position: relative;
+    left: 150px;
+}
 
+.text-bem-vindo{
+    position: relative;
+    left: 210px;
+    width: 86px;
+    height: 18px;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 17px;
+}
 
+.text-email{
+    position: relative;
+    top: 20px;
+    font-family: 'Quicksand',sans-serif;
+    font-style: normal;
+}
 .imagem-redonda-de-uma-pessoa{
     position: relative;
     height: 30px;
     border-radius: 50px;
-    left: 60px;
+    left: 0px;
     top: 12px;
 }
 
@@ -295,9 +309,15 @@ top: 3000px;
 
 /*=========  MAIN  =========*/
 .main{
-    position: relative;
-    bottom: 2508px;
+    position: absolute;
+    bottom: 550px;
     width: 30px;
+    height: 100px;
+    left: 300px;
+    z-index: 1000;
+ 
+
+   
 }
 
 
@@ -309,11 +329,7 @@ top: 3000px;
     font-weight: 900,Black;
 }
 
-.main{
-    position: relative;
-    left: 300px;
-    z-index: 1000;
-}
+
 
 
 
@@ -325,7 +341,7 @@ top: 3000px;
     color: #4E4E4E;
     cursor: pointer;
     padding: 18px;
-    width: 1058px;
+    width: 1190px;
     height: 45px;
     border: none;
     text-align: left;
@@ -359,7 +375,7 @@ top: 3000px;
     line-height: 21.33px;
     letter-spacing: 2%;
     font-family: 'Quicksand',sans-serif;
-    width: 1021px;
+    width: 1153px;
   }
   .contentDiscuções {
     position: relative;
@@ -376,7 +392,7 @@ top: 3000px;
     letter-spacing: 2%;
     font-family: 'Quicksand',sans-serif;
     top: 30px;
-    width: 1021px;
+    width: 1153px;
     height: 807px;
   }
 
@@ -410,7 +426,7 @@ top: 3000px;
     color: #4E4E4E;
     cursor: default;
     padding: 18px;
-    width: 1058px;
+    width: 1190px;
     height: 45px;
     border: none;
     text-align: left;
@@ -588,13 +604,130 @@ top: 3000px;
 
 .aside-right{
     position: relative;
-    left: 1100px;
-    bottom: 2480px;;
+    left: 1250px;
+    top: 10px;
+    width: 200px;
+}
+
+.button-download,.button-star,.button-doi{
+    background-color: #EE7A3A;
+    color: white;
+    border: #33333300;
+    height: 31px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-download{
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.download-text{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 18.75px;
+}
+
+.botoes{
+    display: flex;
+    gap: 5px;
+}
+.button-star{
+    width:43px ;
+    
+}
+.button-doi{
+    width: 43px;
+}
+
+.text-orange-aside-right{
+    color: #EE7A3A;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500, Medium;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.title-detalhes{
+    position: relative;
+    color: black;
+    display: flex;
+    font-weight: 500, Medium;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    left: 15px;
+    top: 11px;
+}
+.box-orange-detalhes{background-color: #FDF1EB; width: 242px; height: 45px;}
+
+.box-text-detalhes{
+    background-color: #ececec00;
+    height: 379px;
+    width: 242px;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+
+.text-box-detalhes{
+    color: #ADA0A0;
+}
+
+.text-universidade{
+    color: #ADA0A0;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2%;
+
+}
+
+.text-box-detalhes >strong{
+    font-weight: 400, Regular;
+    color: black;
+}
+
+
+.box-text-detalhes > ul{
+    position: relative;
+    font-size: 16px;
+    color: #ADA0A0;
+    font-weight: 400, Regular;
+    font-family: 'Quicksand',sans-serif;
+    letter-spacing: 2%;
+    line-height: 16px;
+    right: 35px;
+    width: 185px;
+    display: flex;
+}
+
+*{
+    font-style: none;
+    list-style-type: none;
 }
 
 
 
 
+.video{
+    position: relative;
+    height: 439px;
+    width: 784px;
+}
 
-
-
+.footer-image{
+    position: relative;
+    top: 1000px;
+    left: 300px;
+    z-index: 9999;
+    width: 20px;
+}
+.imagem-footer{
+    position: relative;
+    cursor: pointer;
+    
+}
