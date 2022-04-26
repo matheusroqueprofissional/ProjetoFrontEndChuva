@@ -16,8 +16,8 @@ p,h1,h2,h3,h4{
     display: flex;
     flex-direction: row;
     height: 68px;
-    left: 12px;
-    width: 1299px;
+    left: 202px;
+    width: 1309px;
     background-color: #FDF1EB;
     bottom: 5px;
 }
@@ -351,6 +351,23 @@ top: 3000px;
     font-family: 'Quicksand',sans-serif;
     width: 1021px;
   }
+  .contentDiscuções {
+    position: relative;
+    padding: 0 18px;
+    padding-bottom: 100px;
+    max-height: 1058px;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    background-color: #ffffff;
+    border: #E5E5E5 1px solid;
+    font-weight: 700,bold;
+    font-size: 14px;
+    line-height: 21.33px;
+    letter-spacing: 2%;
+    font-family: 'Quicksand',sans-serif;
+    top: 30px;
+    width: 1021px;
+  }
 
   .second-pharagraph{
       position: relative;
@@ -380,7 +397,7 @@ top: 3000px;
 .collapsibleDiscuções {
     background-color: #FDF1EB;
     color: #4E4E4E;
-    cursor: pointer;
+    cursor: default;
     padding: 18px;
     width: 1058px;
     height: 45px;
@@ -393,6 +410,7 @@ top: 3000px;
     font-weight: 500;
     line-height: 20px;
     font-family: 'Roboto',sans-serif;
+    top:30px;
   }
 
   
@@ -453,3 +471,44 @@ top: 3000px;
 }
 
 
+.title-assunto-da-pergunta{
+    position: relative;
+    width: 269px;
+    height: 20px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 700,bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EE7A3A;
+}
+.subtitle-assunto-da-pergunta{
+    position: relative;
+    height: 15px;
+    width: 542px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 500,bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+}
+
+.text-assunto-da-pergunta{
+    position: relative;
+    font-family:'Quicksand',sans-serif;
+    font-weight: 400,medium;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4D4D4D;
+    width: 980.67px;
+    height: 35px;
+}
+
+.tres-botoes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 4px;
+    height: 4px;
+    top: 12px;
+    gap: 3px;
+}
