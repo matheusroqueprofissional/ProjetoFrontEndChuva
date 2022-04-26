@@ -209,6 +209,16 @@ top: 3000px;
 }
 
 
+#label-Apresentação:hover,
+#label-Comitês:hover,
+#label-Autores:hover,
+#label-Eixos-tematicos:hover,
+#label-Trabalhos:hover,
+#label-Contato:hover{
+    background-color:#FDF1EB;
+}
+
+
 #label-Apresentação{
     position: fixed;
     top:333px;   
@@ -367,6 +377,7 @@ top: 3000px;
     font-family: 'Quicksand',sans-serif;
     top: 30px;
     width: 1021px;
+    height: 807px;
   }
 
   .second-pharagraph{
@@ -512,3 +523,78 @@ top: 3000px;
     top: 12px;
     gap: 3px;
 }
+
+.favoritarimg{
+    position: relative;
+    left: 15px;
+    width: 27px;
+    height: 19px;
+    top: 10px;
+}
+
+.buttoes-inferior-discussoes-assunto{
+    display: flex;
+    flex-direction: row;
+    left: 24px;
+    position: relative;
+}
+
+.conteudo-box{
+    position: relative;
+    left: 37.17px;
+}
+
+.text-like,.text-comentario{
+    left: 25px;
+    position: relative;
+    top: 10px;
+    padding-left:10px;
+    height: 18px;
+    font-weight: 350px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #757575;
+    
+}
+
+.box-assunto-da-pergunta{
+
+    position: relative;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+
+#box-assunto-da-pergunta01{
+    position: relative;
+    top: 30px;
+    height: 190px;
+}
+#box-assunto-da-pergunta02{
+    position: relative;
+    top: 30px;
+    height: 190px;
+}
+
+
+
+
+
+
+/*========ASSIDE RIGHT========*/
+
+
+.aside-right{
+    position: relative;
+    left: 1100px;
+    bottom: 2480px;;
+}
+
+
+
+
+
+
+
