@@ -172,12 +172,7 @@ select {
 .button-menu-aside{
 position: fixed;
 top: 3000px;
-}
-
-
-#label-Apresentação:checked{
-
-    background-color: red;
+color: #725C5C;
 }
 
 
@@ -239,6 +234,61 @@ top: 3000px;
     top:483px
 }
 
+.quadrado-laranja01{
+    z-index: 999999;
+    position: relative;
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 357px;
+    background-image:linear-gradient(#FFB455, #ED7839);
+}
+.quadrado-laranja02{
+    z-index: 999999;
+    position: relative;
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 387px;
+    background-image:linear-gradient(#FFB455, #ED7839);
+}
+.quadrado-laranja03{
+    z-index: 999999;
+    position: relative;
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 417px;
+    background-image:linear-gradient(#FFB455, #ED7839);
+}
+.quadrado-laranja04{
+    z-index: 999999;
+    position: relative;
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 447px;
+    background-image:linear-gradient(#FFB455, #ED7839);
+}
+.quadrado-laranja05{
+    z-index: 999999;
+    position: relative;
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 477px;
+    background-image:linear-gradient(#FFB455, #ED7839);
+}
+.quadrado-laranja06
+{
+    z-index: 999999;
+    position: relative;
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 507px;
+    background-image:linear-gradient(#FFB455, #ED7839) ;
+}
 
 
 

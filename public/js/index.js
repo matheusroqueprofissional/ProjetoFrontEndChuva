@@ -1,6 +1,16 @@
 var coll = document.getElementsByClassName("collapsible");
 document.getElementById('conteudo-compartilhe-suas-ideias').style.display='block';
 document.getElementById('form-envio').style.display='none';
+document.getElementById('quadrado-laranja01').style.display='none';
+document.getElementById('quadrado-laranja02').style.display='none';
+document.getElementById('quadrado-laranja03').style.display='none';
+document.getElementById('quadrado-laranja04').style.display='none';
+document.getElementById('quadrado-laranja05').style.display='none';
+document.getElementById('quadrado-laranja06').style.display='none';
+
+
+
+
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -53,26 +63,100 @@ function retornar(){
 
 function clickapresentacao()
 {
-  document.getElementById("label-Apresentação").style.backgroundColor="red";
+  document.getElementById("label-Apresentação").style.backgroundColor="#FDF1EB";
+  document.getElementById("label-Comitês").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Autores").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Eixos-tematicos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Trabalhos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Contato").style.backgroundColor="#FFFFFF00";
+
+
+
+  document.getElementById('quadrado-laranja01').style.display='block';
+  document.getElementById('quadrado-laranja02').style.display='none';
+  document.getElementById('quadrado-laranja03').style.display='none';
+  document.getElementById('quadrado-laranja04').style.display='none';
+  document.getElementById('quadrado-laranja05').style.display='none';
+  document.getElementById('quadrado-laranja06').style.display='none';
 }
 function clickcomites()
 {
-  document.getElementById("").style.backgroundColor="red";
+  document.getElementById("label-Apresentação").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Comitês").style.backgroundColor="#FDF1EB";
+  document.getElementById("label-Autores").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Eixos-tematicos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Trabalhos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Contato").style.backgroundColor="#FFFFFF00";
+
+  document.getElementById('quadrado-laranja01').style.display='none';
+  document.getElementById('quadrado-laranja02').style.display='block';
+  document.getElementById('quadrado-laranja03').style.display='none';
+  document.getElementById('quadrado-laranja04').style.display='none';
+  document.getElementById('quadrado-laranja05').style.display='none';
+  document.getElementById('quadrado-laranja06').style.display='none';
 }
-function autores()
+function clickautores()
 {
-  document.getElementById("").style.backgroundColor="red";
+  document.getElementById("label-Apresentação").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Comitês").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Autores").style.backgroundColor="#FDF1EB";
+  document.getElementById("label-Eixos-tematicos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Trabalhos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Contato").style.backgroundColor="#FFFFFF00";
+
+  document.getElementById('quadrado-laranja01').style.display='none';
+  document.getElementById('quadrado-laranja02').style.display='none';
+  document.getElementById('quadrado-laranja03').style.display='block';
+  document.getElementById('quadrado-laranja04').style.display='none';
+  document.getElementById('quadrado-laranja05').style.display='none';
+  document.getElementById('quadrado-laranja06').style.display='none';
 }
-function tematicos()
+function clicktematicos()
 {
-  document.getElementById("").style.backgroundColor="red";
+  document.getElementById("label-Apresentação").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Comitês").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Autores").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Eixos-tematicos").style.backgroundColor="#FDF1EB";
+  document.getElementById("label-Trabalhos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Contato").style.backgroundColor="#FFFFFF00";
+
+  document.getElementById('quadrado-laranja01').style.display='none';
+  document.getElementById('quadrado-laranja02').style.display='none';
+  document.getElementById('quadrado-laranja03').style.display='none';
+  document.getElementById('quadrado-laranja04').style.display='block';
+  document.getElementById('quadrado-laranja05').style.display='none';
+  document.getElementById('quadrado-laranja06').style.display='none';
 }
-function trabalhos()
+function clicktrabalhos()
 {
-  document.getElementById("").style.backgroundColor="red";
+  document.getElementById("label-Apresentação").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Comitês").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Autores").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Eixos-tematicos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Trabalhos").style.backgroundColor="#FDF1EB";
+  document.getElementById("label-Contato").style.backgroundColor="#FFFFFF00";
+
+  document.getElementById('quadrado-laranja01').style.display='none';
+  document.getElementById('quadrado-laranja02').style.display='none';
+  document.getElementById('quadrado-laranja03').style.display='none';
+  document.getElementById('quadrado-laranja04').style.display='none';
+  document.getElementById('quadrado-laranja05').style.display='block';
+  document.getElementById('quadrado-laranja06').style.display='none';
 }
-function contato()
+function clickcontato()
 {
-  document.getElementById("").style.backgroundColor="red";
+  document.getElementById("label-Apresentação").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Comitês").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Autores").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Eixos-tematicos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Trabalhos").style.backgroundColor="#FFFFFF00";
+  document.getElementById("label-Contato").style.backgroundColor="#FDF1EB";
+  
+  document.getElementById('quadrado-laranja01').style.display='none';
+  document.getElementById('quadrado-laranja02').style.display='none';
+  document.getElementById('quadrado-laranja03').style.display='none';
+  document.getElementById('quadrado-laranja04').style.display='none';
+  document.getElementById('quadrado-laranja05').style.display='none';
+  document.getElementById('quadrado-laranja06').style.display='block';
 }
 
