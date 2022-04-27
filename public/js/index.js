@@ -48,3 +48,31 @@ function retornar(){
   document.getElementById('conteudo-compartilhe-suas-ideias').style.display='block';
 }
 
+
+
+
+function clickapresentacao()
+{
+  document.getElementById("label-Apresentação").style.backgroundColor="red";
+}
+function clickcomites()
+{
+  document.getElementById("").style.backgroundColor="red";
+}
+function autores()
+{
+  document.getElementById("").style.backgroundColor="red";
+}
+function tematicos()
+{
+  document.getElementById("").style.backgroundColor="red";
+}
+function trabalhos()
+{
+  document.getElementById("").style.backgroundColor="red";
+}
+function contato()
+{
+  document.getElementById("").style.backgroundColor="red";
+}
+
