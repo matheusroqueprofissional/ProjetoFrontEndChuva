@@ -1,6 +1,6 @@
 var coll = document.getElementsByClassName("collapsible");
-document.getElementById('conteudo-compartilhe-suas-ideias').style.display='none';
-document.getElementsById("form-envio").style.display="block";
+document.getElementById('conteudo-compartilhe-suas-ideias').style.display='block';
+document.getElementById('form-envio').style.display='none';
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -37,4 +37,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+function mostrar(){
+  document.getElementById('form-envio').style.display='block';
+  document.getElementById('conteudo-compartilhe-suas-ideias').style.display='none';
+}
+
+function retornar(){
+  document.getElementById('form-envio').style.display='none';
+  document.getElementById('conteudo-compartilhe-suas-ideias').style.display='block';
+}
 

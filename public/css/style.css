@@ -376,6 +376,7 @@ top: 3000px;
     letter-spacing: 2%;
     font-family: 'Quicksand',sans-serif;
     width: 1153px;
+    color: #5C5C5C;
   }
   .contentDiscuções {
     position: relative;
@@ -649,7 +650,9 @@ top: 3000px;
     font-family: 'Roboto',sans-serif;
     font-weight: 500, Medium;
     font-size: 14px;
+    letter-spacing: 5%;
     line-height: 25px;
+
 }
 
 .title-detalhes{
@@ -721,13 +724,131 @@ top: 3000px;
 
 .footer-image{
     position: relative;
-    top: 1000px;
-    left: 300px;
+    top: 330px;
+    left: 00px;
     z-index: 9999;
-    width: 20px;
+    width:200px;
 }
 .imagem-footer{
     position: relative;
     cursor: pointer;
+    width: 1200px;
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-text-form-envio{
+    position: relative;
+    left: 358px;
+    top: 16px;
+    display: flex;
+    width: 965.37;
+    text-align: center;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400,Regular;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #5C5C5C;
+}
+
+.title-assuntos{
+    position: relative;
+    color: #ED7839;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700,bold;
+    font-size: 16px;
+    line-height: 18.75px;
+    top: 22px;
+
+}
+
+.input-assunto{
+    position: relative;
+    width: 1025.52px;
+    height: 32px;
+    border: 1px #CCCCCC solid;
+    top: 22px;
+    border-radius: 3px;
+}
+
+.text-area{
+    position: relative;
+    top: 22px;
+    width: 1025.52px;
+    height: 113px;
+    border: 1px #CCCCCC solid;
+    border-radius: 3px;
+}
+
+.border-text-area{
+    position: relative;
+    width: 1030.52px;
+    height: 31px;
+    background-color: #EAF1F2;
+    bottom: 15.1px;
+    left: 0px;
+}
+
+.line-under-text-area{
+    position: relative;
+    width: 1027px;
+    height: 1px;
+    background-color: #E7E7E7;
+}
+
+#botao-italico,#botao-negrito{
+    display: none;
+}
+
+#botao-negrito-label{
+    position: relative;
+    left: 30px;
+    top: 0px;
+}
+
+#botao-italico-label{
+    position: relative;
+    left: 60px;
+    top: 0px;
+}
+
+.enviar-text-area{
+    position: relative;
+    background-image: linear-gradient(#FEB154,#F1833E);
+    color: #ffffff;
+    width: 205px;
+    height: 31px;
+    left: 789px;
+    border: 0px #ffffff00 solid;
+    font-size: 17px;
+    font-weight: 700, Bold;
+    line-height: 16px;
+    font-family: 'Quicksand',sans-serif;
+    text-align: center;
 }

@@ -8,6 +8,9 @@
     <title>Slaca</title>
 </head>
 <body>
+
+
+
     <header class="header">
         <nav class="nav">
             <div class="text-top">
@@ -29,6 +32,7 @@
             </div>
         </nav>
     </header>
+    
     <aside class="aside-left">
         <div class="box-orange-top">
             <h1 class="title-box-orange">SLACA 2019</h1>
@@ -87,6 +91,10 @@
         </div>
     </aside> 
     <main class="main">
+        <noscript style=" display:flex; position:  relative; left: 300px; width: 900px;"> 
+            <h1>FAVOR ATIVAR JS</h1>
+            <a href="https://ajuda.hostnet.com.br/ativar-o-javascript-no-navegador/#:~:text=se%C3%A7%C3%A3o%20%E2%80%9CJavaScript%E2%80%9D.-,Mozilla%20Firefox%20(8.0),JavaScript%20e%20clique%20em%20OK.">como ativar o JS?</a>
+        </noscript>
         <h2 class="title-main-orange">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
         <div class="video">
             <div id="video-controls" class="controls" data-state="hidden">
@@ -129,7 +137,7 @@
                     e cultural é a curiosidade? Deixe seus 
                     questionamentos ou sugestões para o autor!
                 </p>
-                <button class="button-criar-topico" id="button-criar-topico" name="button-criar-topico"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
+                <button class="button-criar-topico" id="button-criar-topico" name="button-criar-topico" onclick="mostrar()"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
                 <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta01">
                     <div class="conteudo-box">
                         <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
@@ -180,16 +188,31 @@
             </div>
         <!--apos clique em botao laranja-->
 
-            <div class="form-envio" id="form-envio">
-                
-            </div>
+           
         </div>
-    </main>
-    <footer>
+        <div class="form-envio" id="form-envio" name="form-envio">
+            <p class="first-text-form-envio">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+            <h2 class="title-assuntos">Assunto</h2>
+            <input type="text" class="input-assunto" placeholder="Defina um tópico para notificar os autores..." name="input-assunto">
+            <h2 class="title-assuntos">Conteúdo</h2>
+            <textarea class="text-area" name="text-area" id="text-area" cols="30" rows="10"></textarea>
+            <div class="border-text-area">
+                <label for="botao-negrito" id="botao-negrito-label"><img src="../image/imagem-fonte-negrito.svg" alt=""></label>
+                <button id="botao-negrito" name="botao-negrito"></button>
+                <label for="botao-italico" id="botao-italico-label"><img src="../image/imagem-fonte-italico.svg" alt=""></label>
+                <button id="botao-italico" name="botao-negrito"></button>
+                <button class="enviar-text-area">Enviar</button>
+            </div>
+            <div class="line-under-text-area"></div>
+            <button class="enviar" id="retornar" name="retornar" onclick="retornar()">retornar</button>
+        </div>
         <div class="footer-image">
             <img src="../image/imagem - footer.svg" class="imagem-footer" alt="">
-
         </div>
+        
+    </main>
+    <footer>
+        
     </footer>
     <script src="../js/index.js"></script>
 </body>
