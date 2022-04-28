@@ -234,59 +234,64 @@ color: #725C5C;
     top:483px
 }
 
+.quadrado-laranja01,
+.quadrado-laranja02,
+.quadrado-laranja03,
+.quadrado-laranja04,
+.quadrado-laranja05,
+.quadrado-laranja06
+{
+    display: none;
+    position: fixed;
+}
+
 .quadrado-laranja01{
-    z-index: 999999;
-    position: relative;
+    z-index: 999999999;
     width: 5px;
     height: 25px;
     left: 10px;
-    top: 357px;
+    top: 332px;
     background-image:linear-gradient(#FFB455, #ED7839);
 }
 .quadrado-laranja02{
     z-index: 999999;
-    position: relative;
     width: 5px;
     height: 25px;
     left: 10px;
-    top: 387px;
+    top: 363px;
     background-image:linear-gradient(#FFB455, #ED7839);
 }
 .quadrado-laranja03{
     z-index: 999999;
-    position: relative;
     width: 5px;
     height: 25px;
     left: 10px;
-    top: 417px;
+    top: 392px;
     background-image:linear-gradient(#FFB455, #ED7839);
 }
 .quadrado-laranja04{
     z-index: 999999;
-    position: relative;
     width: 5px;
     height: 25px;
     left: 10px;
-    top: 447px;
+    top: 422px;
     background-image:linear-gradient(#FFB455, #ED7839);
 }
 .quadrado-laranja05{
     z-index: 999999;
-    position: relative;
     width: 5px;
     height: 25px;
     left: 10px;
-    top: 477px;
+    top: 452px;
     background-image:linear-gradient(#FFB455, #ED7839);
 }
 .quadrado-laranja06
 {
     z-index: 999999;
-    position: relative;
     width: 5px;
     height: 25px;
     left: 10px;
-    top: 507px;
+    top: 482px;
     background-image:linear-gradient(#FFB455, #ED7839) ;
 }
 
@@ -464,7 +469,7 @@ color: #725C5C;
 #link{
     position: relative;
     left: 570px;
-    bottom: 21.8px;
+    bottom: 20px;
     font-style: normal;
     outline-style: none;
     
@@ -546,8 +551,12 @@ color: #725C5C;
     border-radius: 4px;
     position: relative;
     left: 484px;
+    cursor: pointer;
 }
 
+.button-criar-topico:hover{
+background-image: linear-gradient(#cf9247,#c76b32);
+}
 
 .title-assunto-da-pergunta{
     position: relative;
@@ -631,6 +640,8 @@ color: #725C5C;
     box-sizing: border-box;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    height: 3000px;
+
 }
 
 
@@ -811,7 +822,9 @@ color: #725C5C;
 
 
 
-
+.form-envio{
+    display: none;
+}
 
 .first-text-form-envio{
     position: relative;
@@ -901,4 +914,129 @@ color: #725C5C;
     line-height: 16px;
     font-family: 'Quicksand',sans-serif;
     text-align: center;
+    cursor: pointer;
+    
 }
+.enviar-text-area:hover{
+    background-image: linear-gradient(#cf9247,#c76b32);
+}
+
+.button-retornar{
+    position: relative;
+    background-image: linear-gradient(#FEB154,#F1833E);
+    color: #ffffff;
+    width: 205px;
+    height: 31px;
+    left: 829px;
+    border: 0px #ffffff00 solid;
+    font-size: 17px;
+    font-weight: 700, Bold;
+    line-height: 16px;
+    font-family: 'Quicksand',sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.button-retornar:hover{
+    background-image: linear-gradient(#cf9247,#c76b32);
+}
+
+
+.form-envio-sucess{
+    display: none;
+}
+
+.box-gray{
+    position: relative;
+    background-color: #dddddde7;
+    border: #DDDDDD 1PX solid;
+    width: 1150px;
+    align-items: center;
+    height: 195px;
+    top: 215px;
+    z-index: 999999;
+}
+
+.image-correct{
+    position: relative;
+    left: 580px;
+    top: 35px;
+}
+.title-aguardando{
+    position: relative;
+    left: 449px;
+    width: 414px;
+    height: 20px;
+    top: 34px;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 700,bold;
+    font-family:'Quicksand',sans-serif;
+    line-height: 20px;
+}
+.link-editar-topico{
+    position: relative;
+    left: 550px;
+    top: 25px;
+    color: #ED7839;
+    font-family: 'Segoe UI',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.62px;
+    
+}
+
+
+.title-top-envio-sucess{
+    position: relative;
+    color: #ED7839;
+    font-size: 18px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700,bold;
+    line-height: 21.09px;
+    text-align: center;
+    left: 0px;
+}
+
+.text-top-envio-sucess{
+    top: 18px;
+    position: relative;
+    color: #595959;
+    font-size: 14px;
+    line-height: 19.25px;
+    text-align: center;
+
+}
+
+.link-descubra-outros-trabalhos{
+    top: 56px;
+    left: 470px;
+    position: relative;
+    color: #F48F44;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 500,medium;
+    font-size: 14px;
+    line-height: 19.25px;
+    text-align: center;
+}
+
+.button-novo-topico{
+    position: relative;
+    width: 235.15px;
+    height: 32px;
+    top: 140px;
+    left: 266.4px;
+    font-size: 15px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 700,bold;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#FEB254, #F0813D);
+    border: #ffffff solid 1px;
+    cursor: pointer;
+}
+.button-novo-topico:hover{
+    background-image: linear-gradient(#cf9247,#c76b32);;
+}
+
+

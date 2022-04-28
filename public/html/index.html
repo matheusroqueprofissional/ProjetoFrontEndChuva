@@ -39,7 +39,7 @@
             <img class="image-orange" src="../image/imagem-laranja-13-slaca.svg" alt="">
         </div>
         <div class="box-under-image">
-            <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input> <div class="quadrado-laranja01" id="quadrado-laranja01" ></div> <label for="button-radio" class="button-menu-radio-label" id="label-Apresentação" onclick="clickapresentacao()">Apresentação</label>
+            <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input> <div class="quadrado-laranja01" id="quadrado-laranja01" ></div> <label for="button-radio" class="button-menu-radio-label" id="label-Apresentação" onclick="clickapresentacao(), retornar()">Apresentação</label>
             <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input> <div class="quadrado-laranja02" id="quadrado-laranja02" ></div> <label for="button-radio" class="button-menu-radio-label" id="label-Comitês" onclick="clickcomites()">Comitês</label>
             <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input> <div class="quadrado-laranja03" id="quadrado-laranja03" ></div> <label for="button-radio" class="button-menu-radio-label" id="label-Autores" onclick="clickautores()">Autores</label>
             <input id="button-radio" name="button-radio" type="radio" class="button-menu-aside"></input> <div class="quadrado-laranja04" id="quadrado-laranja04" ></div> <label for="button-radio" class="button-menu-radio-label" id="label-Eixos-tematicos" onclick="clicktematicos()">Tematicos</label>
@@ -124,20 +124,21 @@
         </label>
        <!--DISCUÇÕES-->
         <input type="button" id="collapsibleDiscuções" class="collapsibleDiscuções" value="Discuções"></input>
-        <div class="contentDiscuções">
+        <div class="contentDiscuções" id="contentDiscuções">
             <div class="conteudo-compartilhe-suas-ideias" id="conteudo-compartilhe-suas-ideias">
                 <h2 class="title-compartilhe-suas-idieas">Compartilhe suas ideias ou dúvidas com os autores!</h2>
-                <div class="icones">
+                <a href=""><div class="icones">
                     <img src="../image/icone1.svg" id="icone01" alt="">
                     <img src="../image/icone2.svg" id="icone02" alt="">
                     <img src="../image/icone3.svg" id="icone03" alt="">
                 </div>
+                </a>
                 <p class="text-compartilhe-suas-duvidas">
                     Sabia que o maior estímulo no desenvolvimento científico 
                     e cultural é a curiosidade? Deixe seus 
                     questionamentos ou sugestões para o autor!
                 </p>
-                <button class="button-criar-topico" id="button-criar-topico" name="button-criar-topico" onclick="mostrar()"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
+                <button class="button-criar-topico" id="button-criar-topico" name="button-criar-topico" onclick="criartopico()"> <img src="../image/icon - criar.svg" alt=""> Criar topico</button>
                 <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta01">
                     <div class="conteudo-box">
                         <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
@@ -149,17 +150,165 @@
                             formativo situado impacto de processo formativo processo...
                         </p>
                         <div class="buttoes-inferior-discussoes-assunto">
+                            <a href=""><div class="tres-botoes">
+                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                            </div>
+                            </a>
+                            <div class="favoritar">
+                                <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
+                            </div>
+                            <a href="#" class="text-like">1 like</a>
+                            <a href="#" class="text-comentario">1 comentario</a>
+                    </div>
+                </div>
+                
+                <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
+                    <div class="conteudo-box">
+                        <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                        <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                        <p class="text-assunto-da-pergunta">
+                            Comecinho da pergunta aparece aqui 
+                            resente relato inscreve-se no campo da
+                             análise da dimensão e impacto de processo
+                            formativo situado impacto de processo formativo processo...
+                        </p>
+                        <div class="buttoes-inferior-discussoes-assunto">
+                            <a href="">
+                                <div class="tres-botoes">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                </div>
+                            </a>
+                            <div class="favoritar">
+                                <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
+                            </div>
+                            <a href="#" class="text-like">1 like</a>
+                            <a href="#" class="text-comentario">1 comentario</a>
+                    </div>
+                    </div>  
+                </div>
+            </div>
+            
+        <!--apos clique em botao laranja-->
+
+           
+        </div>
+        <div class="form-envio" id="form-envio" name="form-envio">
+            <p class="first-text-form-envio">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+            <h2 class="title-assuntos">Assunto</h2>
+            <input type="text" class="input-assunto" id="input-assunto" placeholder="Defina um tópico para notificar os autores..." name="input-assunto">
+            <h2 class="title-assuntos">Conteúdo</h2>
+            <textarea class="text-area" id="text-area" name="text-area" id="text-area" cols="30" rows="10"></textarea>
+            <div class="border-text-area">
+                <label for="botao-negrito" id="botao-negrito-label"><img src="../image/imagem-fonte-negrito.svg" alt=""></label>
+                <button id="botao-negrito" name="botao-negrito"></button>
+                <label for="botao-italico" id="botao-italico-label"><img src="../image/imagem-fonte-italico.svg" alt=""></label>
+                <button id="botao-italico" name="botao-negrito"></button>
+                <button class="enviar-text-area" onclick="enviar2()">Enviar</button>
+            </div>
+            <div class="line-under-text-area"></div>
+            <button class="button-retornar" id="button-retornar" name="button-retornar" onclick="buttonretornar()">retornar</button>
+            <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
+                <div class="conteudo-box">
+                    <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                    <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                    <p class="text-assunto-da-pergunta">
+                        Comecinho da pergunta aparece aqui 
+                        resente relato inscreve-se no campo da
+                         análise da dimensão e impacto de processo
+                        formativo situado impacto de processo formativo processo...
+                    </p>
+                    <div class="buttoes-inferior-discussoes-assunto">
+                        <a href="">
                             <div class="tres-botoes">
                                 <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
                                 <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
                                 <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
                             </div>
+                        </a>
+                        <div class="favoritar">
+                            <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
+                        </div>
+                        <a href="#" class="text-like">1 like</a>
+                        <a href="#" class="text-comentario">1 comentario</a>
+                </div>
+                </div>  
+            </div>
+            <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
+                <div class="conteudo-box">
+                    <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                    <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                    <p class="text-assunto-da-pergunta">
+                        Comecinho da pergunta aparece aqui 
+                        resente relato inscreve-se no campo da
+                         análise da dimensão e impacto de processo
+                        formativo situado impacto de processo formativo processo...
+                    </p>
+                    <div class="buttoes-inferior-discussoes-assunto">
+                        <a href="">
+                            <div class="tres-botoes">
+                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                            </div>
+                        </a>
+                        <div class="favoritar">
+                            <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
+                        </div>
+                        <a href="#" class="text-like">1 like</a>
+                        <a href="#" class="text-comentario">1 comentario</a>
+                </div>
+                </div>  
+            </div>
+        </div>
+        
+
+
+        <!--form-envio-sucess-->
+            <div class="form-envio-sucess" id="form-envio-sucess">
+                <div class="top-envio-sucess">
+                    <h1 class="title-top-envio-sucess">Seu topico foi enviado com sucesso :D</h1>
+                    <p class="text-top-envio-sucess">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                    <a class="link-descubra-outros-trabalhos" href="">Descubra outros trabalhos!</a>
+                    <button class="button-novo-topico" id="criar-novo-topico" onclick="criarnovotopico()">criar novo topico</button>
+                </div>
+                <div class="box-gray">
+                    <img class="image-correct" src="../image/correct.svg" alt="">
+                    <h2 class="title-aguardando">Aguardando feedback dos autores</h2>
+                    <a class="link-editar-topico" href="">Editar topico</a>
+                </div>
+
+                <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
+                    <div class="conteudo-box">
+                        <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                        <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                        <p class="text-assunto-da-pergunta">
+                            Comecinho da pergunta aparece aqui 
+                            resente relato inscreve-se no campo da
+                             análise da dimensão e impacto de processo
+                            formativo situado impacto de processo formativo processo...
+                        </p>
+                        <div class="buttoes-inferior-discussoes-assunto">
+                            <a href="">
+                                <div class="tres-botoes">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                </div>
+                            </a>
                             <div class="favoritar">
-                                <img class="favoritarimg" src="../image/favoritar.svg" alt="">
+                                <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
                             </div>
                             <a href="#" class="text-like">1 like</a>
                             <a href="#" class="text-comentario">1 comentario</a>
+                            
                     </div>
+                    
+                    </div>  
+                    
                 </div>
                 <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
                     <div class="conteudo-box">
@@ -172,43 +321,63 @@
                             formativo situado impacto de processo formativo processo...
                         </p>
                         <div class="buttoes-inferior-discussoes-assunto">
-                            <div class="tres-botoes">
-                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
-                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
-                                <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
-                            </div>
+                            <a href="">
+                                <div class="tres-botoes">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                </div>
+                            </a>
                             <div class="favoritar">
-                                <img class="favoritarimg" src="../image/favoritar.svg" alt="">
+                                <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
                             </div>
                             <a href="#" class="text-like">1 like</a>
                             <a href="#" class="text-comentario">1 comentario</a>
+                            
                     </div>
+                    
                     </div>  
+                    
+                </div>
+
+                
+                <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
+                    <div class="conteudo-box">
+                        <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                        <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                        <p class="text-assunto-da-pergunta">
+                            Comecinho da pergunta aparece aqui 
+                            resente relato inscreve-se no campo da
+                             análise da dimensão e impacto de processo
+                            formativo situado impacto de processo formativo processo...
+                        </p>
+                        <div class="buttoes-inferior-discussoes-assunto">
+                            <a href="">
+                                <div class="tres-botoes">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                </div>
+                            </a>
+                            <div class="favoritar">
+                                <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
+                            </div>
+                            <a href="#" class="text-like">1 like</a>
+                            <a href="#" class="text-comentario">1 comentario</a>
+                            
+                    </div>
+                    
+                    </div>  
+                    
+                </div>
+                <div class="footer-image1" id="footer-image1">
+                    <img src="../image/imagem - footer.svg" class="imagem-footer" alt="">
                 </div>
             </div>
-        <!--apos clique em botao laranja-->
-
-           
-        </div>
-        <div class="form-envio" id="form-envio" name="form-envio">
-            <p class="first-text-form-envio">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-            <h2 class="title-assuntos">Assunto</h2>
-            <input type="text" class="input-assunto" placeholder="Defina um tópico para notificar os autores..." name="input-assunto">
-            <h2 class="title-assuntos">Conteúdo</h2>
-            <textarea class="text-area" name="text-area" id="text-area" cols="30" rows="10"></textarea>
-            <div class="border-text-area">
-                <label for="botao-negrito" id="botao-negrito-label"><img src="../image/imagem-fonte-negrito.svg" alt=""></label>
-                <button id="botao-negrito" name="botao-negrito"></button>
-                <label for="botao-italico" id="botao-italico-label"><img src="../image/imagem-fonte-italico.svg" alt=""></label>
-                <button id="botao-italico" name="botao-negrito"></button>
-                <button class="enviar-text-area">Enviar</button>
+            
+            <div class="footer-image" id="footer-image">
+                <img src="../image/imagem - footer.svg" class="imagem-footer" alt="">
             </div>
-            <div class="line-under-text-area"></div>
-            <button class="enviar" id="retornar" name="retornar" onclick="retornar()">retornar</button>
-        </div>
-        <div class="footer-image">
-            <img src="../image/imagem - footer.svg" class="imagem-footer" alt="">
-        </div>
         
     </main>
     <footer>
