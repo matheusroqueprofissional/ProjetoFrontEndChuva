@@ -7,33 +7,42 @@
   
 
     }
+    .aside-right{
+        display: none;
+    }
+
     .nav{
         position: relative;
-        width:1250px
+        width:1000px;
+        right: 3009px;
     }
 
     .box-text-detalhes{
-        width: 30px;
+        width: 700px;
     }
     .box-orange-detalhes{
-        width: 30px;
+        width: 700px;
     }
     .collapsible{
-        width: 30px;
+        width: 700px
     }
     .content{
-        width: 30px;
+        width: 700px
     }
     .collapsibleDiscuções{
-        width: 30px;
+        width: 700px
     }
     .contentDiscuções{
-        width: 30px;
+        width: 700px
     }
-    .login{
+    .login,.imagem-redonda-de-uma-pessoa{
         position: relative;
         right: 300px;
     }
+    video{
+        width: 700px;
+    }
+
 
 
 
