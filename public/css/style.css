@@ -781,6 +781,7 @@ background-image: linear-gradient(#cf9247,#c76b32);
     position: relative;
     height: 439px;
     width: 784px;
+    
 }
 
 .footer-image{
@@ -799,7 +800,18 @@ background-image: linear-gradient(#cf9247,#c76b32);
 
 
 
-
+.bluebottom{
+    position: relative;
+    left: 900px;
+    background-color: red;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.triangulo{
+    position: relative;
+    
+}
 
 
 
@@ -892,14 +904,26 @@ background-image: linear-gradient(#cf9247,#c76b32);
 #botao-negrito-label{
     position: relative;
     left: 30px;
-    top: 0px;
+    top: 5px;
+}
+
+#botao-negrito-label-return{
+    position: relative;
+    left: 30px;
+    top: 5px;
 }
 
 #botao-italico-label{
     position: relative;
-    left: 60px;
+    left: 90px;
     top: 0px;
 }
+#botao-italico-label-return{
+    position: relative;
+    left: 220px;
+    top: 0px;
+}
+
 
 .enviar-text-area{
     position: relative;
@@ -1040,3 +1064,30 @@ background-image: linear-gradient(#cf9247,#c76b32);
 }
 
 
+.box-moreinfo-gray{
+    position: relative;
+    background-color: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    width: 1050px;
+    
+    font-family: 'Quicksand',sans-serif;
+    padding-left: 30px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 400, Regular;
+    line-height: 17px;
+}
+
+.box-moreinfo-white{
+    position: relative;
+    background-color: #FFFFFF;
+ 
+    width: 1050px;
+    
+    font-family: 'Quicksand',sans-serif;
+    padding-left: 30px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 400, Regular;
+    line-height: 17px;
+}

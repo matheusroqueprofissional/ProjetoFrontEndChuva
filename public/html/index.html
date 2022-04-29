@@ -96,20 +96,14 @@
             <a href="https://ajuda.hostnet.com.br/ativar-o-javascript-no-navegador/#:~:text=se%C3%A7%C3%A3o%20%E2%80%9CJavaScript%E2%80%9D.-,Mozilla%20Firefox%20(8.0),JavaScript%20e%20clique%20em%20OK.">como ativar o JS?</a>
         </noscript>
         <h2 class="title-main-orange">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
-        <div class="video">
-            <div id="video-controls" class="controls" data-state="hidden">
-                <button id="playpause" type="button" data-state="play">Play/Pause</button>
-                <button id="stop" type="button" data-state="stop">Stop</button>
-                <div class="progress">
-                   <progress id="progress" value="0" min="0">
-                      <span id="progress-bar"></span>
-                   </progress>
-                </div>
-                <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
-                <button id="volinc" type="button" data-state="volup">Vol+</button>
-                <button id="voldec" type="button" data-state="voldown">Vol-</button>
-                <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
-             </div>
+        <div class="video" >
+            <video name="video" id="video" width="320" height="240" controls>
+                    <img src="" alt="">
+                    <source src="../videos/2021-08-18 20-53-37.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                
+                </video>    
+        </div>
         </div>
         <label for="resumo-input">
                 <input type="button" id="collapsible" class="collapsible" value="Resumo"></input>
@@ -164,7 +158,7 @@
                     </div>
                 </div>
                 
-                <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02">
+                <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta02" onclick="moreinfo()">
                     <div class="conteudo-box">
                         <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
                         <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
@@ -190,6 +184,70 @@
                     </div>
                     </div>  
                 </div>
+
+
+<!--more info-->
+                <div class="box-assunto-da-pergunta" id="box-assunto-da-pergunta03" onclick="lessinfo()">
+                    <div class="conteudo-box">
+                        <h2 class="title-assunto-da-pergunta">Assunto da pergunta aparece aqui</h2>
+                        <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                        <p class="text-assunto-da-pergunta">
+                            Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                            formativo situado impacto de processo formativo processo resente relato
+                             inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?
+                        </p>
+                        <div class="buttoes-inferior-discussoes-assunto">
+                            <a href="">
+                                <div class="tres-botoes">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                    <img src="../image/Ellipse 17.svg" alt="imagemponto01-tres-pontinhos">
+                                </div>
+                            </a>
+                            <div class="favoritar">
+                                <a href=""><img class="favoritarimg" src="../image/favoritar.svg" alt=""></a>
+                            </div>
+                            <a href="#" class="text-like">4 likes</a>
+                            <a href="#" class="text-comentario">4 respostas</a>
+                    </div>
+                    </div>  
+                    <div class="box-moreinfo-gray" id="box-moreinfo-gray" style="position: relative; height: 90px; top:20px; left: 37px; background-color: #F8F8F8">
+                        <h3 class="subtitle-assunto-da-pergunta">Adriana da Silva</h3>
+                            <p class="text-assunto-da-pergunta">
+                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                 situado impacto de processo formativo processo resente relato inscreve-se no campo
+                                 da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </p>
+                    </div>
+                    <div class="box-moreinfo-white" id="box-moreinfo-white" style="position: relative;top:15px; left: 37px; background-color: #FFFFFF">
+                        <h3 class="subtitle-assunto-da-pergunta">Carlos Henrique Santos</h3>
+                            <p class="text-assunto-da-pergunta">
+                                Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                <br>
+                                Obrigada pela resposta, muito interessante o seu trabalho! 
+                            </p>
+                    </div>
+                    <div class="box-moreinfo-gray" id="box-moreinfo-gray" style="position: relative; height: 135px; top:10px; left: 37px; ">
+                        <h3 class="subtitle-assunto-da-pergunta">Camila ferreiraa</h3>
+                            <p class="text-assunto-da-pergunta">
+                                Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo 
+                                situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                formativo situado impacto de processo formativo processo.<br>
+                                Situado impacto de processo formativo processo resente relato inscreve-se no 
+                                campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </p>
+                    </div>
+                    <div class="box-moreinfo-white" id="box-moreinfo-gray" style="top:10px; position: relative; left: 37px; background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                        <h3 class="subtitle-assunto-da-pergunta">Ana carolina</h3>
+                            <p class="text-assunto-da-pergunta">
+                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                formativo situado impacto de processo formativo processo resente relato 
+                                inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </p>
+                    </div>
+
+                </div>
+                
             </div>
             
         <!--apos clique em botao laranja-->
@@ -203,11 +261,15 @@
             <h2 class="title-assuntos">Conteúdo</h2>
             <textarea class="text-area" id="text-area" name="text-area" id="text-area" cols="30" rows="10"></textarea>
             <div class="border-text-area">
-                <label for="botao-negrito" id="botao-negrito-label"><img src="../image/imagem-fonte-negrito.svg" alt=""></label>
+                <label for="botao-negrito" id="botao-negrito-label" onclick="negrito()"><img src="../image/imagem-fonte-negrito.svg" alt=""></label>
                 <button id="botao-negrito" name="botao-negrito"></button>
-                <label for="botao-italico" id="botao-italico-label"><img src="../image/imagem-fonte-italico.svg" alt=""></label>
+                <label for="botao-negrito" id="botao-negrito-label-return" onclick="returnnegrito()"><img src="../image/imagem-fonte-negrito.svg" alt=""></label>
+                <button id="botao-negrito" name="botao-negrito"></button>
+                <label for="botao-italico" id="botao-italico-label" onclick="italico()"><img src="../image/imagem-fonte-italico.svg" alt=""></label>
                 <button id="botao-italico" name="botao-negrito"></button>
-                <button class="enviar-text-area" onclick="enviar2()">Enviar</button>
+                <label for="botao-italico" id="botao-italico-label-return" onclick="returnitalico()"><img src="../image/imagem-fonte-italico.svg" alt=""></label>
+                <button id="botao-italico" name="botao-negrito"></button>
+                <button class="enviar-text-area" id="button-enviar" onclick="enviar2()">Enviar</button>
             </div>
             <div class="line-under-text-area"></div>
             <button class="button-retornar" id="button-retornar" name="button-retornar" onclick="buttonretornar()">retornar</button>

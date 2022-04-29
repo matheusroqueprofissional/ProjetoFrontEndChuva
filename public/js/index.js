@@ -2,7 +2,10 @@ var coll = document.getElementsByClassName("collapsible");
 var textarea = document.getElementById("text-area");
 
 
+document.getElementById('box-assunto-da-pergunta03').style.display="none";
 
+document.getElementById('botao-negrito-label-return').style.display="none";
+document.getElementById('botao-italico-label-return').style.display="none";
 
 document.getElementById('form-envio').style.display='none';
 document.getElementById('conteudo-compartilhe-suas-ideias').style.display='block';
@@ -67,6 +70,7 @@ function buttonretornar(){
 function clickapresentacao()
 {
   document.getElementById('form-envio').style.display='none';
+  document.getElementById('form-envio-sucess').style.display='none';
   document.getElementById('conteudo-compartilhe-suas-ideias').style.display='block';
 
   document.getElementById("label-Apresentação").style.backgroundColor="#FDF1EB";
@@ -200,3 +204,66 @@ if(textarea.value == "")
 }
 
 
+
+function moreinfo(){
+  document.getElementById('box-assunto-da-pergunta03').style.top=30+'px';
+  document.getElementById('box-assunto-da-pergunta03').style.display="block";
+  document.getElementById('box-assunto-da-pergunta02').style.display="none";
+  document.getElementById("contentDiscuções").style.height=4000+'px';
+  document.getElementById('footer-image').style.top = 600 + 'px';
+
+  document.getElementById('box-moreinfo-white').style.position='relative';
+  document.getElementById('box-moreinfo-gray').style.position='relative';
+
+  document.getElementById('box-moreinfo-white').style.left = 37+'px';
+  document.getElementById('box-moreinfo-gray').style.left = 37+'px';
+}
+
+function lessinfo()
+{
+ 
+  document.getElementById('box-assunto-da-pergunta03').style.display="none";
+  document.getElementById('box-assunto-da-pergunta02').style.display="block";
+  document.getElementById('footer-image').style.top = 330 + 'px';
+  document.getElementById("contentDiscuções").style.height=807+'px';
+
+
+}
+
+
+document.getElementById('botao-negrito-label-return').style.display="none";
+
+
+function negrito(){
+document.getElementById('text-area').style.fontWeight=900;
+document.getElementById('botao-negrito-label-return').style.display="block";
+document.getElementById('botao-negrito-label').style.display="none";
+document.getElementById('button-retornar').style.top = 10 +'px';
+document.getElementById('button-enviar').style.bottom = 40 + 'px';
+document.getElementById('button-enviar').style.left = 829 + 'px';
+
+
+document.getElementById('botao-italico-label-return').style.bottom=45 + 'px';
+document.getElementById('botao-italico-label').style.display="block";
+}
+
+function italico(){
+  document.getElementById('text-area').style.fontStyle='italic';
+  document.getElementById('botao-italico-label').style.display='none';
+  document.getElementById('botao-italico-label-return').style.display='block';
+}
+
+function returnnegrito(){
+  document.getElementById('text-area').style.fontWeight=400;
+  document.getElementById('botao-negrito-label-return').style.display="none";
+document.getElementById('botao-negrito-label').style.display="block";
+
+  document.getElementById('botao-italico-label-return').style.top=0 + 'px';
+}
+function returnitalico(){
+  document.getElementById('text-area').style.fontStyle='normal';
+  document.getElementById('botao-italico-label').style.display='block';
+  document.getElementById('botao-italico-label').style.right= 200+"px";
+  document.getElementById('botao-italico-label-return').style.display='none';
+
+}
