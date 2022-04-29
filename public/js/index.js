@@ -181,7 +181,7 @@ function enviar2()
   document.getElementById('footer-image1').style.top=90+'px';
 var textarea = document.getElementById("text-area");
 var inputassunto=document.getElementById("input-assunto");
-/*
+
 if(inputassunto.value == "")
 {
   alert("insira um valor na area de assunto");
@@ -195,7 +195,7 @@ if(textarea.value == "")
   textarea.focus();
   return;
 }
-*/
+
 
 
   document.getElementById('form-envio').style.display='none';
