@@ -780,14 +780,14 @@ background-image: linear-gradient(#cf9247,#c76b32);
 .video{
     position: relative;
     height: 439px;
-    width: 784px;
+    width: 744px;
     
 }
 
 video{
     position: relative;
-    height: 460px;
-    width: 945px;
+    height: 430px;
+    width: 770px;
 }
 
 .footer-image{
@@ -1103,6 +1103,6 @@ video{
 
 
 .box-assunto-da-pergunta{
-    cursor: pointer;
+    cursor:pointer
 }
 

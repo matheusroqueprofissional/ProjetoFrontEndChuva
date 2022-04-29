@@ -210,7 +210,7 @@ function moreinfo(){
   document.getElementById('box-assunto-da-pergunta03').style.display="block";
   document.getElementById('box-assunto-da-pergunta02').style.display="none";
   document.getElementById("contentDiscuções").style.height=4000+'px';
-  document.getElementById('footer-image').style.top = 600 + 'px';
+  document.getElementById('footer-image').style.top = 630 + 'px';
 
   document.getElementById('box-moreinfo-white').style.position='relative';
   document.getElementById('box-moreinfo-gray').style.position='relative';

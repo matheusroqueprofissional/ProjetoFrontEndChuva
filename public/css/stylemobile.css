@@ -11,9 +11,40 @@
         display: none;
     }
 
+    .aside-left{
+        height: 300px;
+        
+    }
+    .box-orange-top{
+
+        height: 150px;
+        width: 300px;
+        position: relative;
+        bottom: 50px;
+    }
+    .title-box-orange{
+        position: relative;
+        top: 0px;
+        width: 300px;
+        font-size: 60px;
+        left: 55px;
+    }
+
+    .text-bem-vindo{
+        font-size: 30px;
+    }
+    .text-bem-vindo{
+        position: relative;
+        left: -100px;
+        width: 210px;
+        top: 25px;
+        font-size:40px;
+    }
+    
     .nav{
         position: relative;
-        width:1000px;
+        width:890px;
+        height: 150px;
         right: 3009px;
     }
 
@@ -24,24 +55,217 @@
         width: 700px;
     }
     .collapsible{
-        width: 700px
+        top: 170px;
+        width: 700px;
+        font-size: 50px;
+        padding-left: 240px;
+        height: 100px;
     }
     .content{
-        width: 700px
+        
+        width: 700px;
+        position: relative;
+        top: 170px;
+        font-size: 40px;
+        line-height: 60px;
+        
+        
     }
     .collapsibleDiscuções{
-        width: 700px
+        padding-left: 240px;
+        top: 70px;
+        height: 100px;
+        width: 700px;
+        font-size: 50px;
     }
     .contentDiscuções{
-        width: 700px
+        top: 170px;
+        width: 700px;
+        height: 30000px;
     }
-    .login,.imagem-redonda-de-uma-pessoa{
+    .login{
         position: relative;
-        right: 300px;
+        left: -300px;
     }
     video{
+        top: 155px;
         width: 700px ;
     }
+    
+    .select-language,.seta,.imagemglobolanguage{
+        display: none;
+        
+    }
+    
+    .select-language,.seta,.imagemglobolanguage{
+        position: relative;
+        left: -300px;
+    }
+
+    .image-orange{
+        display: none;
+    }
+
+    .title-main-orange{
+        top: 50px;
+        position: relative;
+        font-size: 40px;
+    }
+
+    .footer-image{
+        position: relative;
+        bottom: 3000px;
+        width: 2200px;
+        z-index: 0;
+    }
+    
+
+
+
+    #label-Apresentação,
+    #label-Comitês,
+    #label-Autores,
+    #label-Eixos-tematicos,
+    #label-Trabalhos,
+    #label-Contato
+    {
+        position: relative;
+        font-size: 42px;
+    }
+
+    .conteudo-compartilhe-suas-ideias{
+        position: relative;
+        right: 200px;
+    }
+    .conteudo-compartilhe-suas-ideias {
+        font-size: 30px;
+    }
+    .conteudo-compartilhe-suas-ideias,#icone01,#icone02,#icone03{
+        display: none;
+    }
+    .button-criar-topico{
+        top: 50px;
+    }
+
+    .contentDiscuções{
+        position: relative;
+        top: 100px;
+        font-size: 30px;
+        line-height: 80px;
+        
+    }
+    .title-compartilhe-suas-idieas{
+        position: relative;
+        left: 220px;
+        align-items: center;
+        text-align: center;
+    }
+    .text-compartilhe-suas-duvidas{
+        position: relative;
+        height: 50px;
+        top: 10px;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    #box-assunto-da-pergunta01{
+        position: relative;
+        width: 600px;
+        left: 200px;
+        top: 90px;
+        
+    }
+    
+
+    .conteudo-box{
+        position: relative;
+        
+        
+       
+    }
+
+    .imagem-footer{
+        position: relative;
+        bottom: 30px;
+        width: 700px;
+    }
+    .title-assunto-da-pergunta{
+        font-size: 25px;
+        top: 10px;
+        width: 500px;
+    }
+    .subtitle-assunto-da-pergunta{
+        font-size: 20px;
+        top: 20px;
+    }
+    .text-assunto-da-pergunta{
+        top: 30px;
+        width: 540px;
+    }
+
+    .buttoes-inferior-discussoes-assunto{
+        top: 40px;
+    }
+    #box-moreinfo-gray{
+        position: relative;
+        
+    }
+
+    .text-comentario,.text-like{
+        position: relative;
+        top: 33px;
+    }
+    .tres-botoes{
+        position: relative;
+        top: 30px;
+    }
+
+    .favoritarimg{
+        position: relative;
+        top: 0px;
+    }
+
+
+
+    .enviar-text-area{
+        position: relative;
+        left: 400px;
+        height: 90px;
+        top: 30px;
+        font-size: 50px;
+    }
+    .line-under-text-area{
+        display: none;
+    }
+    .text-area,.input-assunto{
+        font-size: 30px;
+    }
+
+    .input-assunto{
+        height: 60px;
+    }
+
+    .title-top-envio-sucess{
+        font-size:35px;
+    }
+    .text-top-envio-sucess{
+        position: relative;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .link-descubra-outros-trabalhos{
+        position: relative;
+        left: 100px;
+        font-size: 40px;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -53,3 +277,4 @@
 
 
 }
+
