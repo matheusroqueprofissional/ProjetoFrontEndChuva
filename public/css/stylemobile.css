@@ -7,17 +7,33 @@
   
 
     }
-.aside-left{
-    display: none;
-}
-.aside-right{
-    display: none;
-}
+    .nav{
+        position: relative;
+        width:1250px
+    }
 
-
-.menu-mobile{
-    position: relative;
-}
+    .box-text-detalhes{
+        width: 30px;
+    }
+    .box-orange-detalhes{
+        width: 30px;
+    }
+    .collapsible{
+        width: 30px;
+    }
+    .content{
+        width: 30px;
+    }
+    .collapsibleDiscuções{
+        width: 30px;
+    }
+    .contentDiscuções{
+        width: 30px;
+    }
+    .login{
+        position: relative;
+        right: 300px;
+    }
 
 
 
