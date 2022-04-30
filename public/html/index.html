@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/stylemobile.css">
+    <link rel="stylesheet" href="../css/jlplayer.css">
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,125 +38,6 @@
     </header>
 
 
-
-
-
-
-
-
-
-
-
-<!--MOBILE-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--COMPUTADOR-->
 
 
 
@@ -217,25 +100,52 @@
         </div>
     </aside> 
     <main class="main">
+
+
         <noscript style=" display:flex; position:  relative; left: 300px; width: 900px;"> 
             <h1>FAVOR ATIVAR JS</h1>
             <a href="https://ajuda.hostnet.com.br/ativar-o-javascript-no-navegador/#:~:text=se%C3%A7%C3%A3o%20%E2%80%9CJavaScript%E2%80%9D.-,Mozilla%20Firefox%20(8.0),JavaScript%20e%20clique%20em%20OK.">como ativar o JS?</a>
         </noscript>
+
         <h2 class="title-main-orange">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
-        <div class="video" >
-            <video poster="../image/videopreview.svg" name="video" id="video" width="320" height="240" controls>
-                    
-                    <source src="../videos/2021-08-18 20-53-37.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+        
+    <label for="">    
+        <form class="video-container" id="video-container" action="" method="GET">
+
+            <!-- Chamar elemento vídeo com class jlplayer-video -->
+            <video onclick="apagaritensvideo()" poster="../image/FOTO DO MATHEUZINHO.png" preload="none" class="jlplayer-video">
                 
-                </video>    
-        </div>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    
+                <!-- <track kind="captions" src="legenda.vtt" default> -->
+            </video>
+            
+                <h1 class="title-inside-video" id="title-inside-video">
+                    Análise sensorial de preparações funcionais desenvolvidas para 
+                    escolares entre 09 e 15 anos, do município de Campinas/SP 
+                </h1>
+                <img class="imagem-senhora" id="imagem-senhora" src="../image/imagem-senhora.svg" alt="elipse de uma senhora">
+                <h1 class="nome-senhora" id="nome-senhora">
+                    Beatriz Christiane Melo
+                </h1>
+                <h2 class="nome-universidade" id="nome-universidade">
+                    FCA / Universidade Estadual de Campinas
+                </h2>
+
+            
+    
+        </form>
+        
+    
+        <!-- Inclusão jlplayer -->
+        <script src="jlplayer.js" async></script>
+    
         </div>
         <label for="resumo-input">
                 <input type="button" id="collapsible" class="collapsible" value="Resumo"></input>
                 <div class="content">
                     <label for="collapsible">
-                      <p class="first-pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <a onclick="sumir()" style="color: #ED7839; position: relative; left: 660px;" id="link">Ver mais</a> </p>                                  
+                      <p class="first-pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <a onclick="sumir()" style="color: #ED7839; position: relative; left: 360px;" id="link">Ver mais</a> </p>                                  
                       <p class="second-pharagraph">Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.</p>
                       <p class="third-pharagraph">Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.</p>
                       <p class="four-pharagraph">Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
@@ -572,5 +482,6 @@
         
     </footer>
     <script src="../js/index.js"></script>
+    <script src="../js/jlplayer.js"></script>
 </body>
 </html>

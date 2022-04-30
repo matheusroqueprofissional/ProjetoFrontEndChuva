@@ -224,7 +224,7 @@ function lessinfo()
  
   document.getElementById('box-assunto-da-pergunta03').style.display="none";
   document.getElementById('box-assunto-da-pergunta02').style.display="block";
-  document.getElementById('footer-image').style.top = 330 + 'px';
+  document.getElementById('footer-image').style.top = 230 + 'px';
   document.getElementById("contentDiscuções").style.height=807+'px';
 
 
@@ -265,5 +265,20 @@ function returnitalico(){
   document.getElementById('botao-italico-label').style.display='block';
   document.getElementById('botao-italico-label').style.right= 200+"px";
   document.getElementById('botao-italico-label-return').style.display='none';
+
+}
+
+
+
+
+function apagaritensvideo(){
+
+  document.getElementById('title-inside-video').style.display="none";
+  document.getElementById('nome-senhora').style.display='none';
+  document.getElementById('imagem-senhora').style.display='none';
+  document.getElementById('nome-universidade').style.display='none';
+  document.getElementById('button-player').style.display='none';
+  document.getElementById('video-container2').style.display='block';
+  document.getElementById('video-container1').style.display='none';
 
 }

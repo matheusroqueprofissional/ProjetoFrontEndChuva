@@ -382,6 +382,8 @@ color: #725C5C;
     height: 54px;
     font-family: 'Roboto',sans-serif;
     font-weight: 900,Black;
+    letter-spacing: 0.05em;
+    font-size: 20px;
 }
 
 
@@ -408,6 +410,7 @@ color: #725C5C;
     line-height: 20px;
     font-family: 'Roboto',sans-serif;
     cursor: pointer;
+    
   }
   label{
       cursor: pointer;
@@ -425,10 +428,10 @@ color: #725C5C;
     transition: max-height 1s ease-out;
     background-color: #ffffff;
     border: #E5E5E5 1px solid;
-    font-weight: 700,bold;
+    font-weight: 400,bold;
     font-size: 14px;
     line-height: 21.33px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     font-family: 'Quicksand',sans-serif;
     width: 1153px;
     color: #5C5C5C;
@@ -468,13 +471,13 @@ color: #725C5C;
 
 #link{
     position: relative;
-    left: 570px;
+    font-weight: 700;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 14px;
     bottom: 20px;
-    font-style: normal;
-    outline-style: none;
+
     
 }
-
 
 
 .collapsibleDiscuções {
@@ -776,18 +779,9 @@ background-image: linear-gradient(#cf9247,#c76b32);
 
 
 
-
-.video{
-    position: relative;
-    height: 439px;
-    width: 744px;
-    
-}
-
 video{
     position: relative;
-    height: 430px;
-    width: 770px;
+    
 }
 
 .footer-image{
@@ -1105,4 +1099,67 @@ video{
 .box-assunto-da-pergunta{
     cursor:pointer
 }
+
+
+
+
+.title-inside-video{
+    position: relative;
+    bottom: 430px;
+    color: #FFFFFF;
+    width: 734px;
+    height: 54px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900,Black;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    left: 32px;
+}
+
+.imagem-senhora{
+    position: relative;
+    bottom: 230px;
+    left: 31px;
+    border: 1px solid #ED7839;
+    border-radius: 50%;
+    height: 86px;
+    
+}
+.nome-senhora{
+    position: relative;
+    bottom: 315px;
+    left: 132px;
+    color: white;
+    width: 452px;
+    height: 36px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 34px;
+    line-height: 25px;
+    font-weight: 900,black;
+    height: 36px;
+}
+
+.nome-universidade{
+    position: relative;
+    bottom: 335px;
+    left: 132px;
+    color: white;
+    width: 417px;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900,black;
+    height: 27px;
+
+}
+
+.video-container,.video-container2{
+    position: relative;
+    top: 0px;
+    height: 439px;
+}
+
 
